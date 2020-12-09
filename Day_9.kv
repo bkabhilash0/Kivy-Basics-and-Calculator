@@ -1,0 +1,36 @@
+#:kivy 1.11.1
+<Button>
+    font_size: 32
+    background_normal: ""
+    background_color: (0,0,1,1)
+
+<TextInput>
+    background_color: (150/255,150/255,150/255,1)
+    font_size: 32
+
+<Label>
+    font_size:28    # This overrides the button font also.
+
+<MyLayout>
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width,root.height
+        spacing: 20
+        padding: 20
+
+        Label:
+            text: "Name"
+        TextInput:
+            multiline: False
+
+        Label:
+            text: "Favourite Colour"
+        TextInput:
+            multiline: False
+
+        Button:
+            text: "Submit"
+
+        Button:
+            text: "Clear"
+            background_color: (1,0,0,1)

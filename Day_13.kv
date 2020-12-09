@@ -1,0 +1,24 @@
+#:kivy 1.11.1
+<Button>
+    font_size:32
+    size_hint: (0.3,0.3)
+<MyLayout>
+    FloatLayout:
+        size: root.width,root.height
+
+        # Float has values of [x,y,top,bottom,left,right]
+        Button:
+            text: "Top Left"
+            pos_hint: {'x':0,'top':1}
+        Button:
+            text: "Top Right"
+            pos_hint: {'x':0.7,'top':1}
+        Button:
+            text: "Center"
+            pos_hint: {'x':0.35,'y':0.35}
+        Button:
+            text: "Bottom Left"
+            pos_hint: {'x':0}
+        Button:
+            text: "Bottom Right"
+            pos_hint: {'x':0.7,'bottom':1}

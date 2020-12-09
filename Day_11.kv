@@ -1,0 +1,21 @@
+#:kivy 1.11.1
+<Button>
+    font_size: 32
+<MyLayout>
+    canvas.before:
+    # This overrides the colour from the py file.
+        Color:
+            rgba: (235/255, 80/255, 129/255,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    BoxLayout:
+        orientation:"vertical"
+        size: root.width,root.height
+        spacing: 20
+        padding: 20
+
+        Button:
+            text: "Button 1"
+        Button:
+            text: "Button 2"
